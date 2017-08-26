@@ -5,9 +5,17 @@
 
   <body>
 
-    {{ content }}
+    <main>
+      {{ content }}
+    </main>
 
-    {% include team.html %}
-    
+    <section class="team">
+      {% include team.html %}
+    </section>
+
+    <section class="credits">
+      {% include credits.html %}
+    </section>
+
   </body>
 </html>

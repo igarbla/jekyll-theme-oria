@@ -1,8 +1,11 @@
-<div class="team-list">
+<article class="team-list">
+  <header>
+    <h1>Team</h1>
+  </header>
   {% for member in site.data.team %}
   <div class="team-member">
-    <h1>{{ member.name}}</h1>
+    <h2>{{ member.name}}</h2>
     <p>Twitter: {{ member.twitter }}</p>
   </div>
   {% endfor %}
-</div>
+</article>
