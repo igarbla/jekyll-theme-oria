@@ -1,0 +1,20 @@
+<section id="site-navigation">
+
+  <img src="http://via.placeholder.com/150x150" alt="{{ site.title }}">
+
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      {% for p in site.pages %}
+      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+</section>
