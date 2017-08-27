@@ -3,19 +3,29 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="frontpage">
 
     <main>
-      {{ content }}
+
+      <article>
+
+        <header>
+          <h1>{{ site.title}}</h1>
+          <p>{{ site.description }}</p>
+          <img src="{{ "/assets/images/background.jpg" | relative_url }}" alt="">
+        </header>
+
+        <section class="team">
+          {% include team.html %}
+        </section>
+
+        <section class="credits">
+          {% include credits.html %}
+        </section>
+
+    </article>
+
     </main>
-
-    <section class="team">
-      {% include team.html %}
-    </section>
-
-    <section class="credits">
-      {% include credits.html %}
-    </section>
 
   </body>
 </html>
