@@ -20,7 +20,8 @@ body {
 
   img {
     grid-column: 1;
-    //align-self: stretch;
+    align-self: center;
+    justify-self: center;
     max-width: 100%;
   }
 
@@ -60,11 +61,12 @@ body {
     }
   }
   input ~ nav {
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
+    display: none;
     background: white;
     transition: .5s;
     transition-delay: .5s;
+    align-content: center;
+    justify-content: center;
     > ul {
       text-align: center;
       list-style-type: none;
@@ -72,6 +74,7 @@ body {
         opacity: 0;
         transition: .5s;
         transition-delay: 0s;
+        padding: 1.5em;
         > a {
           text-decoration: none;
           text-transform: uppercase;
@@ -85,6 +88,9 @@ body {
     }
   }
   input:checked ~ nav {
+    grid-column: span 3;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
     height: 100%;
     transition-delay: 0s;
     > ul {
@@ -104,6 +110,7 @@ body {
     }
     input ~ nav {
       grid-column: 3 / -1;
+      display: grid;
       width: auto;
       height: auto;
       background-color: rgba(255,255,255,0);
@@ -139,6 +146,7 @@ body {
          display: grid;
          grid-gap: 20px;
          grid-template-columns: repeat(4, 1fr);
+         overflow: hidden;
 
          h1 {
            grid-column: 3 / -1;
@@ -175,7 +183,7 @@ body {
        article {
          header {
            img {
-             width: 100vw;
+             width: 100%;
              height: auto;
            }
          }
