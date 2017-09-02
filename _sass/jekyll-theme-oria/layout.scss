@@ -15,13 +15,17 @@ body {
   max-height: 100px;
   z-index: 10;
 
-  img {
-    //grid-column: 1;
+  a {
     align-self: center;
     justify-self: center;
-    max-width: 100%;
-    height: 100px;
+    img {
+      //grid-column: 1;
+
+      max-width: 100%;
+      height: 100px;
+    }
   }
+
 
   input {
     display: none;
