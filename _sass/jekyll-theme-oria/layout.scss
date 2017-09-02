@@ -11,12 +11,12 @@ body {
   //z-index: 10;
   background-color: rgba(255,255,255,0.7);
   display: grid;
-  grid-template-columns: 150px 1fr 102px;
-  height: 150px;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));;
+  max-height: 150px;
   z-index: 10;
 
   img {
-    grid-column: 1;
+    //grid-column: 1;
     align-self: center;
     justify-self: center;
     max-width: 100%;
@@ -27,7 +27,7 @@ body {
   }
 
   input + label {
-    grid-column: 3;
+    //grid-column: -1;
     //justify-self: end;
     display: grid;
     grid-template-rows: repeat(3, 3px);
@@ -58,7 +58,9 @@ body {
     }
   }
   input ~ nav {
-    display: none;
+    //display: none;
+    height: 0;
+    grid-column: span 2;
     background: white;
     transition: .5s;
     transition-delay: .5s;
@@ -85,7 +87,7 @@ body {
     }
   }
   input:checked ~ nav {
-    grid-column: span 3;
+    height: 100%;
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     height: 100%;
