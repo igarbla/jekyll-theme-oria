@@ -9,7 +9,7 @@ body {
 #site-navigation {
   grid-area: header;
   //z-index: 10;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,1);
   display: grid;
   grid-template-columns: repeat(2, minmax(100px, 1fr));;
   max-height: 150px;
@@ -58,8 +58,8 @@ body {
     }
   }
   input ~ nav {
-    //display: none;
     height: 0;
+    //opacity: 0;
     grid-column: span 2;
     background: white;
     transition: .5s;
@@ -67,6 +67,7 @@ body {
     align-content: center;
     justify-content: center;
     > ul {
+      display: none;
       text-align: center;
       list-style-type: none;
       > li {
@@ -93,6 +94,7 @@ body {
     height: 100%;
     transition-delay: 0s;
     > ul {
+      display: block;
       > li {
         opacity: 1;
         transition-delay: .5s;
@@ -115,6 +117,7 @@ body {
       background-color: rgba(255,255,255,0);
       ul {
         position: static;
+        display: block;
         li {
           display: inline-block;
           opacity: 1;
