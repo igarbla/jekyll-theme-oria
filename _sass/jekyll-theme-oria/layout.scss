@@ -4,9 +4,6 @@ body {
   "header"
   "content"
   "footer";
-  grid-template-rows: 10vh 1fr 15%;
-  margin: 0;
-  padding: 0;
 }
 
 #site-navigation {
@@ -130,7 +127,6 @@ body {
 
 #main-content {
   grid-area: content;
-  grid-row: 1;
 }
 #site-footer {
   gris-area: footer;
@@ -140,7 +136,8 @@ body {
  * Frontpage
  */
  .frontpage {
-   main {
+   #main-content {
+     grid-row: 1;
      article {
        header {
          display: grid;
