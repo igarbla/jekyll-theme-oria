@@ -1,6 +1,6 @@
 <section id="site-navigation">
 
-  <a href="{{ "/" | prepend: relative_url }}"><img src="http://via.placeholder.com/150x150" alt="{{ site.title }}"></a>
+  <a href="{{ "/" | prepend: relative_url }}"><img src="{{ site.logo | default: "https://via.placeholder.com/150x150" }}" alt="{{ site.title }}"></a>
 
   <input id="burger" type="checkbox" />
   <label for="burger">
