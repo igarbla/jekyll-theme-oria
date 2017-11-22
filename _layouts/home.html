@@ -17,6 +17,9 @@
           <img src="{{ "/assets/images/background.jpg" | relative_url }}" alt="">
         </header>
 
+        {% for section in page.sections %}
+        {% endfor %}
+
         <section class="team padding-1">
           {% include team.html %}
         </section>
