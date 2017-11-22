@@ -1,4 +1,4 @@
-<section class="image-with-overlay section-height-{{ include.item.section-height }} text-size-{{ include.item.text.size}}">
+<section class="image-with-overlay section-height-{{ include.item.section-height }} text-size-{{ include.item.text-size}}" style="background-image: url({{ include.item.image.url | default: "http://via.placeholder.com/900x450" }})">
   <article>
     <header>
       <h1>{{ include.item.heading }}</h1>

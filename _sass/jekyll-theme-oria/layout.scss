@@ -215,3 +215,20 @@ body {
 .padding-1 {
   padding: 1em;
 }
+
+
+/**
+ * Sections
+ */
+
+.image-with-overlay {
+  background-position: center;
+  background-size: cover;
+
+  &.section-height-medium {
+    padding: 5rem;
+  }
+  &.section-height-large {
+    padding: 10rem 5rem;
+  }
+}

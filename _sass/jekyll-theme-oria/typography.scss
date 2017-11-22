@@ -2,7 +2,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 header {
-  font-family: 'Cormorant Garamond', serif;
+  //font-family: 'Cormorant Garamond', serif;
   p {
     font-family: 'Source Sans Pro', sans-serif;
   }
@@ -27,12 +27,30 @@ h6 {
   font-size: 1.1rem;
 }
 
+.text-size-medium {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.text-size-large {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+
 #main-content {
   header {
     h1  {
       text-transform: uppercase;
       text-align: center;
-      letter-spacing: 0.5em;
+      letter-spacing: 0.3rem;
     }
     p {
       text-align: center;

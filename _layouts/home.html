@@ -18,6 +18,10 @@
         </header>
 
         {% for section in page.sections %}
+
+          {% assign s = site.sections | where: "title", section | first %}
+          {% include {{ s.type | append: ".html" }} item=s %}
+
         {% endfor %}
 
         <section class="team padding-1">
