@@ -1,6 +1,6 @@
 <section id="site-navigation">
 
-  <a href="{{ "/" | prepend: relative_url }}"><img src="{{ site.logo | default: "https://via.placeholder.com/150x150" }}" alt="{{ site.title }}"></a>
+  <a href="{{ "/" | prepend: absolute_url }}"><img src="{{ site.logo | default: "https://via.placeholder.com/150x150" }}" alt="{{ site.title }}"></a>
 
   <input id="burger" type="checkbox" />
   <label for="burger">
@@ -12,7 +12,7 @@
   <nav>
     <ul>
       {% for item in site.data.main-menu %}
-      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      <li><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
       {% endfor %}
     </ul>
   </nav>
