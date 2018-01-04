@@ -108,18 +108,20 @@ body {
     input + label {
       display: none;
     }
-    input ~ nav {
+    input ~ nav,
+    input:checked ~ nav {
       grid-column: 3 / -1;
       display: grid;
       width: auto;
       height: auto;
       background-color: rgba(255,255,255,0);
-      ul {
+      > ul {
         position: static;
         display: block;
-        li {
+        > li {
           display: inline-block;
           opacity: 1;
+          padding: 1.5em;
           a{
             padding: 0;
           }
