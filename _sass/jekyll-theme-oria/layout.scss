@@ -58,8 +58,9 @@ body {
   }
   input ~ nav {
     height: 0;
-    grid-column: span 2;
-    background: white;
+    width: 100%;
+    //grid-column: span 2;
+    //background: white;
     transition: .5s;
     transition-delay: .5s;
     align-content: center;
