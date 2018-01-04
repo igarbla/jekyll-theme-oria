@@ -111,6 +111,7 @@ body {
     input ~ nav,
     input:checked ~ nav {
       grid-column: 3 / -1;
+      grid-template-rows: auto;
       display: grid;
       width: auto;
       height: auto;
