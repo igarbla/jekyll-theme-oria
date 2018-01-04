@@ -136,8 +136,7 @@ body {
  */
  .frontpage {
    #main-content {
-     //grid-row: 1;
-     article {
+     & + article {
        header {
          display: grid;
          grid-gap: 20px;
@@ -185,10 +184,6 @@ body {
            }
            p {
              grid-column: 2 / -1;
-           }
-           img {
-             width: 100%;
-             height: auto;
            }
          }
        }
