@@ -144,6 +144,7 @@ body {
          grid-template-columns: repeat(4, 1fr);
          overflow: hidden;
          height: calc(100vh - 100px);
+         background: #fff url(/assets/images/background.jpg) no-repeat center top;
 
          h1 {
            grid-column: 1 / -1;
