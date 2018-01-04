@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   //grid-template-columns: repeat(2, minmax(100px, 1fr));;
-  max-height: 100px;
+  //max-height: 100px;
 
   a {
     align-self: center;
@@ -87,12 +87,11 @@ body {
     }
   }
   input:checked ~ nav {
-    height: 100%;
+    height: auto;
     width: 100%;
     background: white;
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    height: 100%;
+    //display: grid;
+    //grid-template-rows: repeat(6, 1fr);
     transition-delay: 0s;
     z-index: 10;
     > ul {
