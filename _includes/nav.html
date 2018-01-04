@@ -11,7 +11,7 @@
 
   <nav>
     <ul>
-      {% for item in site.data.main-menu %}
+      {% for item in site.data.main-menu.items %}
       <li><a href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
       {% endfor %}
     </ul>
