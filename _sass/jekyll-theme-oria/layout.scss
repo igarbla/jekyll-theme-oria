@@ -88,11 +88,13 @@ body {
     grid-template-rows: repeat(6, 1fr);
     height: 100%;
     transition-delay: 0s;
+    z-index: 10;
     > ul {
       display: block;
       > li {
         opacity: 1;
         transition-delay: .5s;
+        padding: 0;
       }
     }
   }
