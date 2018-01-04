@@ -1,6 +1,13 @@
-<section id="site-navigation">
-
-  <a href="{{ "/" | prepend: absolute_url }}"><img src="{{ site.logo | default: "https://via.placeholder.com/150x150" }}" alt="{{ site.title }}"></a>
+<header class="head">
+  <h1 class="logo">
+    <a href="{{ "/" | prepend: absolute_url }}">
+      <picture>
+        <source srcset="{{ site.logo.svg-large | default: "/assets/images/logo-oria.svg" }}" media="(min-width: 58.125em)" type="image/svg+xml" />
+        <source srcset="{{ site.logo.svg-small | default: "/assets/images/logo-oria.svg" }}" type="image/svg+xml" />
+        <img src="{{ site.logo.png | default: "/assets/images/logo-oria.svg" }}" alt="{{ site.title }}">
+      </picture>
+    </a>
+  </h1>
 
   <input id="burger" type="checkbox" />
   <label for="burger">
