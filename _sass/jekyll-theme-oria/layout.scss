@@ -15,7 +15,7 @@ body {
 
   a {
     align-self: center;
-    justify-self: center;
+    justify-self: left;
     img {
       max-width: 100%;
       height: 100px;
@@ -30,7 +30,7 @@ body {
     display: grid;
     grid-template-rows: repeat(3, 3px);
     grid-row-gap: 5px;
-    justify-content: center;
+    justify-content: right;
     align-content: center;
     padding: 35px;
     span {
