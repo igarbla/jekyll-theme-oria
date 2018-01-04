@@ -135,32 +135,34 @@ body {
  * Frontpage
  */
  .frontpage {
-   #main-content + article {
-     header {
-       display: grid;
-       grid-gap: 20px;
-       grid-template-columns: repeat(4, 1fr);
-       overflow: hidden;
-       height: calc(100vh - 100px);
-       background: #fff url(/assets/images/background.jpg) no-repeat center top;
+   #main-content {
+     article {
+       .main-header {
+         display: grid;
+         grid-gap: 20px;
+         grid-template-columns: repeat(4, 1fr);
+         overflow: hidden;
+         height: calc(100vh - 100px);
+         background: #fff url(/assets/images/background.jpg) no-repeat center top;
 
-       h1 {
-         grid-column: 1 / -1;
-         grid-row: 2;
-         background-color: rgba(0,0,0,0.7);
-         color: #fff;
-         align-self: start;
-         padding: 20px;
-         order: 2;
-       }
+         h1 {
+           grid-column: 1 / -1;
+           grid-row: 2;
+           background-color: rgba(0,0,0,0.7);
+           color: #fff;
+           align-self: start;
+           padding: 20px;
+           order: 2;
+         }
 
-       p {
-         grid-column: 1 / -1;
-         grid-row: 3;
-         background-color: rgba(0,0,0,0.7);
-         color: #fff;
-         padding: 20px;
-         order: 3;
+         p {
+           grid-column: 1 / -1;
+           grid-row: 3;
+           background-color: rgba(0,0,0,0.7);
+           color: #fff;
+           padding: 20px;
+           order: 3;
+         }
        }
      }
    }
@@ -168,7 +170,7 @@ body {
    @media screen and (min-width: 768px) {
      #main-content {
        article {
-         header {
+         .main-header {
            h1 {
              grid-column: 3 / -1;
            }
