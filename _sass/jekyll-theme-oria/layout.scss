@@ -145,55 +145,55 @@ body {
 /**
  * Frontpage
  */
- .frontpage {
-   #main-content {
+.frontpage {
+  main {
+   article {
+     header {
+       display: grid;
+       grid-gap: 20px;
+       grid-template-columns: repeat(4, 1fr);
+       overflow: hidden;
+       height: calc(100vh - 100px);
+       background: #fff url(/assets/images/background.jpg) no-repeat center top;
+       background-size: cover;
+
+       h1 {
+         grid-column: 1 / -1;
+         grid-row: 2;
+         background-color: rgba(0,0,0,0.7);
+         color: #fff;
+         align-self: start;
+         padding: 20px;
+         order: 2;
+       }
+
+       p {
+         grid-column: 1 / -1;
+         grid-row: 3;
+         background-color: rgba(0,0,0,0.7);
+         color: #fff;
+         padding: 20px;
+         order: 3;
+       }
+     }
+   }
+  }
+  @media screen and (min-width: 768px) {
+   main {
      article {
-       .main-header {
-         display: grid;
-         grid-gap: 20px;
-         grid-template-columns: repeat(4, 1fr);
-         overflow: hidden;
-         height: calc(100vh - 100px);
-         background: #fff url(/assets/images/background.jpg) no-repeat center top;
-         background-size: cover;
-
+       header {
          h1 {
-           grid-column: 1 / -1;
-           grid-row: 2;
-           background-color: rgba(0,0,0,0.7);
-           color: #fff;
-           align-self: start;
-           padding: 20px;
-           order: 2;
+           grid-column: 3 / -1;
          }
-
          p {
-           grid-column: 1 / -1;
-           grid-row: 3;
-           background-color: rgba(0,0,0,0.7);
-           color: #fff;
-           padding: 20px;
-           order: 3;
+           grid-column: 2 / -1;
          }
        }
      }
    }
-
-   @media screen and (min-width: 768px) {
-     #main-content {
-       article {
-         .main-header {
-           h1 {
-             grid-column: 3 / -1;
-           }
-           p {
-             grid-column: 2 / -1;
-           }
-         }
-       }
-     }
-   }
- }
+  }
+  }
+}
 
 .team-list {
   display: grid;
