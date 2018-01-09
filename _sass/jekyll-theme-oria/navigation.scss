@@ -3,9 +3,10 @@ header.main-header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5rem 1rem;
 
   h1 {
-    flex: 0 1 250px;
+    flex: 0 1 150px;
     transition: .5s;
   }
   h1 img {
@@ -19,7 +20,6 @@ header.main-header {
   input + label {
     display: flex;
     flex-direction: column;
-    margin-right: 1em;
   }
   input + label span  {
     width: 39px;

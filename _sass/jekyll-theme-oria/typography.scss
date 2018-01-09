@@ -27,6 +27,14 @@ h6 {
   font-size: 1.1rem;
 }
 
+.main-header {
+  nav {
+    a {
+      font-size: 1.62rem;
+    }
+  }
+}
+
 .text-size-medium {
   h1 {
     font-size: 2rem;
@@ -42,18 +50,5 @@ h6 {
   }
   p {
     font-size: 2rem;
-  }
-}
-
-#main-content {
-  header {
-    h1  {
-      text-transform: uppercase;
-      text-align: center;
-      letter-spacing: 0.3rem;
-    }
-    p {
-      text-align: center;
-    }
   }
 }
