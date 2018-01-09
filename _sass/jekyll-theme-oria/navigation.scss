@@ -1,0 +1,81 @@
+header.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    flex: 0 1 250px;
+    transition: .5s;
+  }
+  h1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  input {
+    display: none;
+  }
+  input + label {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+  }
+  input + label span  {
+    width: 39px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000;
+    transition: .8s;
+  }
+  input + label:hover {
+    cursor: pointer;
+  }
+  input:checked + label span {
+      opacity: 0;
+  }
+  input:checked + label span:first-child {
+      opacity: 1;
+      transform: translateY(13px) rotate(405deg);
+  }
+  input:checked + label span:last-child {
+      opacity: 1;
+      transform: translateY(-13px) rotate(-405deg);
+  }
+  input ~ nav {
+    display: none;
+  }
+  input ~ nav ul {
+
+  }
+  input ~ nav ul li {
+    margin-bottom: 2em;
+  }
+  input:checked ~ nav {
+    display: block;
+    padding-top: 2em;
+    transition: .8s;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 58.125em) {
+    h1 {
+      flex: 0 1 385px;
+    }
+    input + label {
+      display: none;
+    }
+    input ~ nav {
+      display: block;
+      flex: 1;
+    }
+    input ~ nav ul {
+      display: flex;
+      justify-content: space-around;
+    }
+    input ~ nav ul li {
+      margin-bottom: 0;
+    }
+  }
+}
