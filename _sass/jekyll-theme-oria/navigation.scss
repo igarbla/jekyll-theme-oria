@@ -3,7 +3,6 @@ header.main-header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
 
   h1 {
     flex: 0 1 150px;
@@ -49,17 +48,17 @@ header.main-header {
 
   }
   input ~ nav ul li {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
   input:checked ~ nav {
     display: block;
-    padding-top: 2em;
+    padding-top: 2rem;
     transition: .8s;
     width: 100%;
     text-align: center;
   }
 
-  @media screen and (min-width: 58.125em) {
+  @media screen and (min-width: 58.125rem) {
     h1 {
       flex: 0 1 225px;
     }
@@ -76,6 +75,9 @@ header.main-header {
     }
     input ~ nav ul li {
       margin-bottom: 0;
+    }
+    input:checked ~ nav {
+      padding-top: 0;
     }
   }
 
