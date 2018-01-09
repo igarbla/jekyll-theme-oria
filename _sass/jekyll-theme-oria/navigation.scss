@@ -78,4 +78,24 @@ header.main-header {
       margin-bottom: 0;
     }
   }
+
+  /**
+   * Typography
+   */
+  nav {
+    a {
+     font-size: 1.62rem;
+     text-transform: uppercase;
+     text-decoration: none;
+    }
+  }
+
+  /**
+   * Colors
+   */
+   nav {
+     a {
+       color: $black;
+     }
+   }
 }
